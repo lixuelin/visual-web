@@ -1,0 +1,240 @@
+@charset "utf-8";
+@font-face {
+  font-family: num;
+  src: url("../../assets/iconfont/waukegan_ldo_bold-webfont.woff");
+}
+
+.apollo-state{
+  height: 100%;
+  background:
+    linear-gradient(0deg, rgba(25, 32, 45,1) 0%, rgba(25, 32, 45,.4) 30%,rgba(0,102,239,0) 0%),
+    url("/static/img/stateBg.png"),
+    linear-gradient(0deg, rgba(25, 32, 45,1) 0%, rgba(25, 32, 45,.4) 50%,rgba(0,102,239,0) 100%);
+
+  &-map{
+    position: relative;
+  }
+
+  &-count{
+    & h1{
+      font-family: num;
+      font-size: 28px;
+      letter-spacing: 4px;
+      & span{
+        font-size: 100%;
+      }
+    }
+
+    &-name{
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 28px;
+    }
+
+    &-tip{
+      padding-top: 28px;
+      font-size: 12px;
+    }
+    &-line{
+      margin: 5px 0;
+      width: 136px;
+      height: 1px;
+      background: #fff;
+    }
+  }
+
+  &-flex{
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-top: 27px;
+    border-top: 1px solid rgba(255,255,255,.15);
+
+    &:first-child{
+      padding-top: 0;
+      border-top: none;
+    }
+
+    &-title{
+      padding-bottom: 26px;
+      color: #fff;
+
+      & h4{
+        position: relative;
+        font-size: 20px;
+        line-height: 40px;
+        &:after{
+          position: absolute;
+          top: -5px;
+          left: 0;
+          content: "";
+          width: 66px;
+          height: 3px;
+        }
+      }
+
+      & p{
+        font-size: 14px;
+      }
+    }
+
+    &-list{
+      flex: 1;
+
+      & ul{
+        display: flex;
+        transform: translateX(0);
+      }
+
+      & li{
+        position: relative;
+        flex: 1;
+        padding-left: 30px;
+
+
+
+        & time{
+          font-size: 18px;
+          color: #f00;
+        }
+
+        & p{
+          font-size: 12px;
+          line-height: 17px;
+          color: rgba(255,255,255,.7);
+        }
+      }
+    }
+  }
+
+  &-danger{
+    & h4:after{
+      background: #f00;
+    }
+
+    & li{
+      cursor: pointer;
+    }
+
+    & li time{
+      color: #f00;
+    }
+  }
+
+  &-connect{
+    & h4:after{
+      background: #006AF3;
+    }
+
+    & li{
+      &:after{
+        position: absolute;
+        left: 17px;
+        top: 28px;
+        content: "";
+        width: 1px;
+        height: 52px;
+        background: #979797;
+        transform: rotate(10deg) translateY(-50%);
+      }
+    }
+
+    & li:first-child{
+      background: url("../../../static/img/1.svg") no-repeat left center;
+    }
+
+    & li:nth-child(2){
+      background: url("../../../static/img/2.svg") no-repeat left center;
+    }
+
+    & li:nth-child(3){
+      background: url("../../../static/img/3.svg") no-repeat left center;
+    }
+
+    & li:nth-child(4){
+      background: url("../../../static/img/4.svg") no-repeat left center;
+    }
+
+    & li:last-child{
+      background: url("../../../static/img/5.svg") no-repeat left center;
+    }
+
+    & li time{
+      color: #006AF3;
+    }
+  }
+
+  &-laybox{
+    position: fixed;
+    z-index: 99999999;
+    top: 50%;
+    left: 50%;
+    width: 740px;
+    height: 465px;
+    background: linear-gradient(-180deg, #1A2230 0%, #0F1622 100%);
+    transform: translate(-50%,-50%);
+
+    &-close{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 15px;
+      height: 13px;
+      background: url("../../../static/img/del.png");
+      cursor: pointer;
+    }
+
+    &-body{
+      display: flex;
+      padding: 60px 135px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-car{
+      position: relative;
+      display: inline-flex;
+      width: 159px;
+      height: 346px;
+      background: url("../../../static/img/car.png") no-repeat center;
+      &-svg{
+        width: 159px;
+        height: 346px;
+        &-default{
+          fill: #4e7aff;
+          r: 3;
+          cursor: pointer;
+        }
+
+        & .current{
+          fill: #a71dff;
+          r: 10;
+          stroke: #7d4aff;
+          stroke-width: 10px;
+          stroke-opacity: .3;
+        }
+      }
+    }
+    &-cont{
+      flex: 1;
+      padding-left: 80px;
+      &>div{
+        padding-bottom: 20px;
+        &:last-child{
+          padding-bottom: 0;
+        }
+      }
+      & h4{
+        padding-bottom: 20px;
+        font-size: 18px;
+        color: #fff;
+      }
+      & p{
+        font-size: 12px;
+        line-height: 20px;
+        color: rgba(255,255,255,.5);
+      }
+    }
+  }
+}

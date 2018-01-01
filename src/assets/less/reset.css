@@ -1,0 +1,69 @@
+html,
+body {
+  font-family: "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei";
+  background: #19202D;
+}
+html,
+body,
+li,
+ul,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+.apollo-wrap {
+  margin: 0 auto;
+}
+@media screen and (min-width: 1280px) and (max-width: 1400px) {
+  .apollo-wrap {
+    width: 1280px;
+  }
+  .apollo-state-map {
+    margin: 0 auto;
+    width: 1021px;
+    height: 533px;
+    background: url("../../../static/img/map1280.png");
+    background-position-x: 22px;
+  }
+  .apollo-state-count {
+    position: absolute;
+    left: 26px;
+    bottom: 77px;
+    color: #fff;
+  }
+  #main {
+    width: 1021px;
+    height: 533px;
+  }
+  .apollo-state-wrap {
+    margin: 0 auto;
+    width: 1003px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .apollo-wrap {
+    width: 1400px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .apollo-wrap {
+    width: 1920px;
+  }
+}

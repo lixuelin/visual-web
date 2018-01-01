@@ -1,0 +1,28 @@
+@charset "utf-8";
+.apollo-notifi-list li {
+  padding: 30px 0;
+  border-bottom: 1px solid #2a3349;
+}
+.apollo-notifi-list-head {
+  font-size: 14px;
+  color: #fff;
+}
+.apollo-notifi-list-head-column {
+  display: inline-flex;
+  margin-right: 20px;
+}
+.apollo-notifi-list-head span {
+  padding-right: 5px;
+}
+.apollo-notifi-list-cont {
+  display: flex;
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #999;
+  flex-wrap: wrap;
+}
+.apollo-notifi-list-cont span {
+  display: inline-flex;
+  padding-right: 20px;
+}

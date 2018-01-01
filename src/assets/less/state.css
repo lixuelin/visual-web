@@ -1,0 +1,116 @@
+@charset "utf-8";
+.apollo-state {
+  background: url("/static/img/stateBg.png");
+}
+.apollo-state-map {
+  position: relative;
+}
+.apollo-state-count h1 {
+  font-size: 48px;
+}
+.apollo-state-count-name {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+}
+.apollo-state-count-tip {
+  padding-top: 28px;
+  font-size: 12px;
+}
+.apollo-state-count-line {
+  margin: 5px 0;
+  width: 136px;
+  height: 1px;
+  background: #fff;
+}
+.apollo-state-flex {
+  position: relative;
+  display: flex;
+  top: -20px;
+  margin-left: 20px;
+  margin-top: 5px;
+  padding-top: 27px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.apollo-state-flex:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+.apollo-state-flex-title {
+  flex-basis: 280px;
+  padding-bottom: 26px;
+  color: #fff;
+}
+.apollo-state-flex-title h4 {
+  position: relative;
+  font-size: 20px;
+  line-height: 40px;
+}
+.apollo-state-flex-title h4:after {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  content: "";
+  width: 66px;
+  height: 3px;
+}
+.apollo-state-flex-title p {
+  font-size: 14px;
+}
+.apollo-state-flex-list {
+  flex: 1;
+}
+.apollo-state-flex-list ul {
+  display: flex;
+}
+.apollo-state-flex-list li {
+  position: relative;
+  flex: 1;
+  padding-left: 30px;
+}
+.apollo-state-flex-list li time {
+  font-size: 18px;
+  color: #f00;
+}
+.apollo-state-flex-list li p {
+  font-size: 12px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.apollo-state-danger h4:after {
+  background: #f00;
+}
+.apollo-state-danger li time {
+  color: #f00;
+}
+.apollo-state-connect h4:after {
+  background: #006AF3;
+}
+.apollo-state-connect li:after {
+  position: absolute;
+  left: 17px;
+  top: 28px;
+  content: "";
+  width: 1px;
+  height: 52px;
+  background: #979797;
+  transform: rotate(10deg) translateY(-50%);
+}
+.apollo-state-connect li:first-child {
+  background: url("/static/img/1.svg") no-repeat left center;
+}
+.apollo-state-connect li:nth-child(2) {
+  background: url("/static/img/2.svg") no-repeat left center;
+}
+.apollo-state-connect li:nth-child(3) {
+  background: url("/static/img/3.svg") no-repeat left center;
+}
+.apollo-state-connect li:nth-child(4) {
+  background: url("/static/img/4.svg") no-repeat left center;
+}
+.apollo-state-connect li:last-child {
+  background: url("/static/img/5.svg") no-repeat left center;
+}
+.apollo-state-connect li time {
+  color: #006AF3;
+}

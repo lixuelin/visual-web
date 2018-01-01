@@ -1,0 +1,19 @@
+@charset "utf-8";
+.apollo-table {
+  width: 100%;
+  font-size: 14px;
+  color: #fff;
+  line-height: 70px;
+  border-collapse: collapse;
+}
+.apollo-table thead {
+  background: #1a2535;
+  text-align: left;
+}
+.apollo-table td,
+.apollo-table th {
+  padding: 0 20px;
+}
+.apollo-table td {
+  border-bottom: 1px solid #2a3349;
+}

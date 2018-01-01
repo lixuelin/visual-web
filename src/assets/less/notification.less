@@ -1,0 +1,107 @@
+@charset "utf-8";
+body{
+	font-size:14px;
+}
+
+*{
+	box-sizing:content-box;
+}
+
+
+
+::-webkit-scrollbar {
+	width: 4px; 
+}
+
+::-webkit-scrollbar-track {
+	background:black;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background: #006AFF;
+}
+
+
+
+.pageContent{
+	padding-top:40px;
+	padding-left:30px;
+	padding-right:30px;
+	background-color:#132238;
+	font-size:14px;
+	
+	
+}
+
+.tab div{
+    display:inline-block;
+    width:116px;
+    height:40px;
+    background-color:rgba(0,0,0,0.2);
+    color:#FFFFFF;
+    text-align: center;
+    line-height:38px;
+    font-size:14px;
+}
+
+.tab div.active{
+	height:38px;
+	background-color:#000000;
+    border-bottom:solid 2px #006AFF;
+    opacity:1;
+
+}
+.tab div:last-child{
+	margin-left:-4px;
+}
+
+
+
+
+
+
+.oneData:first-child{
+	margin-top:50px;
+}
+
+.oneData{
+	border-bottom:solid 1px #2A3349;
+	padding-bottom:60px;
+}
+.oneData + .oneData{
+	margin-top:60px;
+}
+.oneData .title{
+	color:#FFFFFF;
+	margin-bottom:30px;
+}
+.oneData .title span:first-child{
+	margin-right:40px;
+}
+
+.oneData .content{
+	color:#999999;
+	overflow: auto;
+	height: 42px;/*高于此将出现滚动条*/
+	line-height: 21px;
+
+}
+.content div{//vue v-for指令给套了一层div   临时使用
+    display:inline-block;
+}
+/*
+.content div + div{
+    margin-left:40px;
+}
+*/
+.content div {
+    margin-right:40px;
+}
+
+.content span{
+	display:inline-block;
+}
+.content span + span{
+    margin-left:40px;
+}

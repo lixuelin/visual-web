@@ -1,0 +1,170 @@
+@charset "utf-8";
+body{
+	font-size:14px;
+}
+*{
+	box-sizing:content-box;
+}
+.pageContent{
+	padding-top:40px;
+	padding-left:30px;
+	padding-right:30px;
+	background-color:#132238;
+	font-size:14px;
+}
+
+.queryBar{
+	height:30px;
+	/*line-height: 70px;*/
+	background-color:#111C2F;
+	color:#FFFFFF;
+	font-size:12px;
+	padding-top:20px;
+	padding-bottom:20px;
+	position:relative;
+}
+.queryBar .wraper{
+	height:30px;
+	position:absolute;
+	right:30px;
+	top:20px;
+}
+.queryBar div{
+    display:inline-block;
+}
+
+.number,.version{
+	height:30px;
+}
+
+
+.version{
+	margin-left:40px;
+	position:relative;
+}
+
+.version .selectAngle{
+   width:12px;
+   height:12px;
+   background-image:url(../../../static/img/Rectangle.png);
+   position:absolute;
+   right:0;
+   bottom:3px;
+}
+
+
+.version .underline{
+	color:#999999;
+}
+.whiteFont{
+	color:#FFFFFF;
+}
+
+.underline{
+	background-color: rgba(0,0,0,0);
+	border:none;
+	outline:none;	
+}
+
+.underline{
+	width:130px;
+	height:16px;
+	padding-top:7px;
+	padding-bottom:6px;
+	border-bottom:solid 1px #3A6098;
+	padding-left:10px;
+	margin-left:10px;
+}
+
+.inputOuter{
+   position : relative;
+}
+/*下拉框样式*/
+.version #inputSelect{
+   position: absolute;
+   top: 30px;
+   right:0;
+   
+   width: 140px;
+   height: 200px;
+   overflow: auto;
+  
+   background-color: #000000;
+   border-bottom: solid #3A6098 1px;
+}
+#inputSelect span{
+  display: block;
+  height: 50px;
+  text-align: left;
+  line-height:50px;
+  padding-left:10px;
+}
+#inputSelect span:hover{
+  background-color:#3A6098;
+}
+
+
+
+
+
+
+.btn{
+  width:50px;
+  height:30px;
+  border:none;
+  color:#FFFFFF;
+  background-color: #006AFF;
+  font-size:12px;
+}
+
+.btn.active,.btn:hover {
+	background-color:#1659B7 ;
+}
+
+.btn + .btn{
+	margin-left:20px;
+}
+button:first-of-type{
+	margin-left:60px;
+}
+
+
+
+
+
+.oneData{
+	border-bottom:solid 1px #2A3349;
+	padding-bottom:60px;
+	margin-top:60px;
+
+}
+
+
+.oneData .title{
+	color:#FFFFFF;
+	margin-bottom:30px;
+}
+
+.title span{
+	display:inline-block;
+}
+.title span:first-child{
+	margin-right:70px;
+}
+.title span + span{
+	margin-left:50px;
+}
+
+.oneData .content{
+	color:#999999;
+	line-height:21px;
+}
+
+.content .part{
+	margin-top:20px;
+
+}
+
+.partContent{
+   margin-top:7px;
+}

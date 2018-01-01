@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+.apollo-table{
+  width: 100%;
+  font-size: 14px;
+  color: #fff;
+  line-height: 70px;
+  border-collapse:collapse;
+
+  & thead{
+    background: #1a2535;
+
+    & th:first-child div{
+      justify-content: left;
+    }
+
+    & th div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    & th:last-child div{
+      justify-content: left;
+    }
+  }
+
+  & td, & th{
+    padding: 0 20px;
+    text-align: center;
+    &:last-child {
+      text-align: left;
+    }
+  }
+
+  & td{
+    border-bottom: 1px solid #2a3349;
+  }
+
+  &-check{
+    display: flex;
+    align-items: center;
+  }
+
+  & label{
+    position: relative;
+    width: 9px;
+    height: 9px;
+    background: #19202D;
+    cursor: pointer;
+
+    &:after{
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: 11px;
+      height: 11px;
+      border: 1px solid #999;
+    }
+
+    &.checkLabel{
+      background: #0073EB;
+      &:after{
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: 11px;
+        height: 11px;
+        border: 1px solid #0073EB;
+      }
+    }
+  }
+
+  & input[type="checkbox"]{
+    cursor: pointer;
+  }
+
+  .apollo-table-status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-sort, &-resver{
+    display: inline-flex;
+    margin-left: 8px;
+    width: 12px;
+    height: 18px;
+    background: url("../../../../static/img/triange_up.png") 0 0 no-repeat,
+      url("../../../../static/img/triange_down.png") bottom left no-repeat;
+    cursor: pointer;
+
+  }
+  &-resver{
+    transform: rotate(180deg);
+  }
+
+  &-laybox{
+    background: #0F1622;
+  }
+
+  &-safeIcon,&-dangerIcon,&-dubiousIcon{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+  }
+
+  &-safeIcon{
+    background: url("/static/img/icon_safe.png");
+  }
+
+  &-dangerIcon{
+    background: url("/static/img/icon_danger.png");
+  }
+
+  &-dubiousIcon{
+    background: url("/static/img/icon_dubious.png");
+  }
+
+  & .apollo-btn{
+    display: inline-flex;
+    padding: 0;
+    align-items: center;
+    border: none;
+    background: rgba(216,216,216,.05);
+    &:hover{
+      border: none;
+      background: #006AFF;
+    }
+    & span{
+      display: inline-flex;
+    }
+    & span:last-child{
+      padding: 0 5px;
+    }
+  }
+}

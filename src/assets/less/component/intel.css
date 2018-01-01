@@ -1,0 +1,23 @@
+@charset "utf-8";
+.apollo-intel-list li {
+  margin: 0 20px;
+  padding: 30px 0;
+  border-bottom: 1px solid #2a3349;
+}
+.apollo-intel-list-head {
+  font-size: 14px;
+  color: #fff;
+}
+.apollo-intel-list-head-column {
+  display: inline-flex;
+  margin-right: 20px;
+}
+.apollo-intel-list-head span {
+  padding-right: 5px;
+}
+.apollo-intel-list-cont {
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #999;
+}

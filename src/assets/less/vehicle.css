@@ -1,0 +1,9 @@
+@charset "utf-8";
+.apollo-vehicle-search {
+  display: flex;
+  padding: 30px 20px;
+  background: #151c28;
+}
+.apollo-vehicle-search-set {
+  flex: 1;
+}

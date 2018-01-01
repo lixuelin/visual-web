@@ -1,0 +1,227 @@
+@charset "utf-8";
+.apollo-vehicle{
+  &-search{
+    display: flex;
+    padding: 30px 20px;
+    background: #151c28;
+    &-set{
+      flex: 1;
+    }
+  }
+}
+
+.apollo-tabs{
+  padding: 20px 0;
+  font-size: 14px;
+  color: #fff;
+
+  & li{
+    position: relative;
+    display: inline-flex;
+    padding: 0 30px;
+    line-height: 40px;
+    background: #101a2a;
+    cursor: pointer;
+    &:after{
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 10px;
+      width: 1px;
+      height: 20px;
+      background: #3f4754;
+    }
+
+    &:last-child:after,&.current:after{
+      background: none;
+    }
+  }
+  .active{
+    border-bottom: 2px solid #006aff;
+    background: #101a2a;
+  }
+}
+.alert{
+  height: 40px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 99;
+  transform:translate(-50%,-50%);
+  display: flex;
+  background: #166F59;
+  opacity: .9;
+  border: 1px solid #47CBAA;
+  font-size: 14px;
+  color: #47CBAA;
+  .left{
+    flex: 1;
+  }
+  .right{
+    flex: 6;
+    text-align: center;
+    line-height: 40px;
+    border-left:1px solid #47CBAA;
+    padding: 0 20px;
+  }
+}
+.all{
+  border: 1px solid #FF7C7C;
+  background: rgba(121,34,34,0.30);
+  .right{
+    color: #FF7C7C;
+    border-left:1px solid #FF7C7C;
+  }
+}
+.notice_car{
+  position:fixed;
+  top:50%;
+  left:50%;
+  width:520px;
+  background: #000000;
+  transform:translate(-50%,-50%);
+  cursor: pointer;
+  car_text{
+    height: 100px;
+    width: 480px;
+    .show{
+      overflow: auto;
+      p{
+        height: 20px;
+        width: 100px;
+        float: left;
+      }
+    }
+  }
+  .top{
+    line-height: 60px;
+    height: 60px;
+    margin: 0 20px;
+    color: #ffffff;
+    border-bottom: 1px solid #2A3349;
+    font-size: 18px;
+    position: relative;
+    span{
+      display: inline-block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: 20px;
+      top: 20px;
+      z-index: 100;
+      background: url("../../../static/img/Group 3 Copy 2.png");
+    }
+  }
+  .bottom{
+    margin: 20px 20px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    .car_text{
+      height: 60px;
+      overflow: auto;
+    }
+    .show{
+
+    }
+    .check{
+      width: 480px;
+      height: 120px;
+      background: #0C1018;
+      margin-top: 20px;
+      .div_li{
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+      }
+      label{
+        display: block;
+        height: 40px;
+        width: 30px;
+      }
+      label span{
+        height: 12px;
+        width: 12px;
+        border-radius: 10px;
+        border: 1px solid #999999;
+        display: inline-block;
+        position: relative;
+      }
+      label span:after{
+        position: absolute;
+        content: '';
+        font-size: 0;
+        border: 4px solid #3C91FF;
+        border-radius: 50%;
+        left: 1px;
+        top: 1px;
+        display: none;
+      }
+      input[type="radio"]:checked+label span:after{
+        display: block;
+      }
+      input[type="radio"]:checked+label span{
+        border: 1px solid #3C91FF;
+      }
+      .i_text{
+        display: inline-block;
+        font-size: 14px;
+      }
+      .i_input{
+        display: inline-block;
+      }
+    }
+  }
+  .but{
+    color: #ffffff;
+    width: 90px;
+    line-height: 30px;
+    background: #006AFF;
+    font-size: 12px;
+    text-align: center;
+    margin: 30px auto;
+  }
+}
+.apollo-tab li:after{display: none}
+
+.title_bg{
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+.sele{
+  position: relative;
+  b{
+    width: 0px;
+    height: 0px;
+    border-bottom: 12px solid #3A6098;
+    border-left: 12px solid transparent;
+    position: absolute;
+    left: -12px;
+    bottom: 3px;
+  }
+}
+.select{
+  position: absolute;
+  top: 30px;
+  left: -141px;
+  height: 200px;
+  width: 141px;
+  background: #000000;
+  color: #ffffff;
+  overflow: auto;
+  border-bottom: 1px solid #3A6098;
+  ul{
+    height: auto;
+    li{
+      line-height: 50px;
+      text-align: center;
+    }
+    li:hover{
+      background: #3A6098;
+    }
+  }
+}
+//.apollo-table-safeIcon,.apollo-table-dangerIcon,.apollo-table-dubiousIcon{
+//  margin-left: 30px;
+//}

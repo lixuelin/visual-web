@@ -1,0 +1,78 @@
+@charset "utf-8";
+.apollo-header {
+  height: 70px;
+  background: #1A1B1C;
+}
+.apollo-header-box {
+  display: flex;
+  line-height: 70px;
+}
+.apollo-header-logo {
+  flex: 1;
+}
+.apollo-header-logo span {
+  color: rgba(255, 255, 255, 0.5);
+}
+.apollo-header-nav {
+  flex: 6;
+  text-align: center;
+}
+.apollo-header-nav li {
+  display: inline-flex;
+  margin-left: 31px;
+}
+.apollo-header-nav li.current a {
+  color: #006AF3;
+}
+.apollo-header-nav a {
+  font-size: 18px;
+  color: #fff;
+}
+.apollo-header-user {
+  flex: 1;
+}
+.apollo-header-user a {
+  font-size: 14px;
+  color: #fff;
+}
+.apollo-form {
+  display: flex;
+  justify-content: flex-end;
+}
+.apollo-form-group {
+  display: inline-flex;
+  margin-right: 20px;
+  font-size: 12px;
+}
+.apollo-form-group label {
+  line-height: 30px;
+  color: #fff;
+}
+.apollo-form-group input[type='text'] {
+  padding: 0 20px;
+  width: 160px;
+  height: 30px;
+  color: #fff;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #3a6089;
+}
+.apollo-form-group select {
+  color: #999;
+}
+.apollo-btn {
+  margin-right: 10px;
+  height: 30px;
+  border: 1px solid #ccc;
+  color: #fff;
+  background: #ccc;
+  cursor: pointer;
+}
+.apollo-btn-plain {
+  border-color: #006aff;
+  background: #006aff;
+}
+.apollo-btn-default {
+  border-color: #2b4367;
+  background: #2b4367;
+}

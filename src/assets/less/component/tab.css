@@ -1,0 +1,32 @@
+@charset "utf-8";
+.apollo-tab {
+  padding: 20px 0;
+  font-size: 14px;
+  color: #fff;
+}
+.apollo-tab li {
+  position: relative;
+  display: inline-flex;
+  padding: 0 30px;
+  line-height: 40px;
+  background: #101a2a;
+  border-bottom: 2px solid #101a2a;
+  cursor: pointer;
+}
+.apollo-tab li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 1px;
+  height: 20px;
+  background: #3f4754;
+}
+.apollo-tab li:last-child:after,
+.apollo-tab li.current:after {
+  background: none;
+}
+.apollo-tab li.current {
+  background: #000;
+  border-bottom: 2px solid #006aff;
+}
